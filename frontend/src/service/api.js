@@ -10,11 +10,3 @@ export const uploadCSV = async (file) => {
     body: formData,
   });
 };
-
-export const predictEnrollment = async (text) => {
-  return fetch("http://localhost:8000/predict/enrollment/", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ text }),
-  });
-};
